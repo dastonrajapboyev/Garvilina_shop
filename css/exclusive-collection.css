@@ -1,0 +1,28 @@
+/* Exclusive Collection Section */
+.exclusive-collection {
+  padding: 80px 0;
+}
+
+.exclusive-collection__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.exclusive-collection__header h2 {
+  font-size: 36px;
+  color: var(--primary-black);
+}
+
+@media (max-width: 768px) {
+  .exclusive-collection__header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .exclusive-collection__header h2 {
+    font-size: 28px;
+  }
+}

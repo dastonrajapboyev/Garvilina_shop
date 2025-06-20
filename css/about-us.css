@@ -1,0 +1,54 @@
+/* About Us Section */
+.about-us {
+  padding: 80px 0;
+}
+
+.about-us .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-us__content {
+  flex: 1;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--primary-black);
+}
+
+.about-us p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.about-us__image-placeholder {
+  flex: 1;
+  height: 400px; /* Adjust as needed */
+  background-color: var(--secondary-gray);
+}
+
+.btn--link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn--link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-us .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-us__image-placeholder {
+    width: 100%;
+    height: 250px;
+  }
+}

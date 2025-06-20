@@ -1,0 +1,157 @@
+/* Footer */
+.footer {
+  background-color: var(--primary-black);
+  color: #fff;
+  padding: 50px 0 20px 0;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer__nav-group {
+  flex: 1;
+  min-width: 150px;
+}
+
+.footer__nav-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer__nav-group ul {
+  list-style: none;
+}
+
+.footer__nav-group a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer__subscribe {
+  flex: 2;
+  min-width: 250px;
+}
+
+.footer__subscribe p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.subscribe-form .btn--dark {
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer__social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+.footer__disclaimer {
+  font-size: 12px;
+  color: #777;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer__bottom p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer__top {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer__nav-group {
+    min-width: unset;
+  }
+
+  .footer__subscribe {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subscribe-form input,
+  .subscribe-form .btn--dark {
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .footer__social-icons {
+    justify-content: center;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer__links a {
+    margin: 0 10px;
+  }
+}
