@@ -1,54 +1,122 @@
 /* About Us Section */
 .about-us {
-  padding: 80px 0;
+  height: 560px;
+  background-color: #fff;
+  margin-top: 100px;
 }
 
-.about-us .container {
+.about-us .container-about {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 120px;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+.about-us__image-wrapper {
+  background: rgb(243, 243, 243);
+  width: 672px;
+  height: 560px;
+}
+
+.about-us__image-placeholder {
+  width: 373.48px;
+  height: 444px;
+  position: relative;
+  /* flex-shrink: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us__image-placeholder svg {
+  position: absolute;
+  top: 12%;
+  background-color: #fff;
+  left: 42%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.about-us__placeholder-text {
+  width: 323px;
+  font-size: 13px;
+  position: relative;
+  text-align: center;
+  left: 42%;
+  margin-top: 109px;
+  z-index: 1;
+  color: rgb(149, 149, 149);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
 }
 
 .about-us__content {
-  flex: 1;
+  max-width: 580px;
 }
 
 .about-us h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: var(--primary-black);
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 74px 0;
 }
 
 .about-us p {
   font-size: 16px;
-  margin-bottom: 20px;
-  color: var(--text-color);
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
 }
 
-.about-us__image-placeholder {
-  flex: 1;
-  height: 400px; /* Adjust as needed */
-  background-color: var(--secondary-gray);
+.about-us p:last-of-type {
+  margin-bottom: 40px;
 }
 
 .btn--link {
-  color: var(--link-color);
-  text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+  margin-top: 20px !important;
 }
 
 .btn--link:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+.about-us__content p {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: -28px;
+}
+
+@media (max-width: 1200px) {
   .about-us .container {
-    flex-direction: column-reverse;
+    gap: 60px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us .container {
+    flex-direction: column;
     text-align: center;
   }
-
   .about-us__image-placeholder {
     width: 100%;
-    height: 250px;
+    height: auto;
+    padding-bottom: 100%; /* Maintain square aspect ratio */
   }
 }

@@ -1,91 +1,172 @@
 /* Unique Combinations Section */
 .unique-combinations {
   padding: 80px 0;
-  text-align: center;
+  margin-top: 95px;
+}
+
+.unique-combinations .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .unique-combinations h2 {
-  font-size: 36px;
-  margin-bottom: 50px;
-  color: var(--primary-black);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 .carousel {
+  /* This container might not need specific styles if carousel__items handles the layout */
+}
+
+.carousel__items {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
 }
 
-.carousel .product-card {
-  flex: 0 0 auto;
-  width: 380px; /* Adjust as needed for carousel items */
+.carousel__items .product-card {
+  width: 348px;
+  height: auto; /* Let content define height */
+  background: #fff;
+  /* border: 1px solid #e0e0e0; */
 }
 
+.carousel__items .product-card .product-card__image-placeholder {
+  height: 434px;
+  background-color: #f5f5f5;
+}
+
+/* Video Placeholder */
 .carousel__video-placeholder {
-  width: 580px;
-  height: 400px; /* Adjust as needed */
-  background-color: var(--secondary-gray);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  color: #777;
+  width: 712.53px;
+  height: 560px;
+  background-color: #f5f5f5;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel__video-placeholder .video-controls {
+.carousel__video-placeholder > svg {
+  /* The cross */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.video-controls__play-pause {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.carousel__video-placeholder .play-button {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  width: 64px;
+  height: 64px;
+  background: url("../images/pause-icon.svg") no-repeat center center;
   border: none;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
+.video-controls__next-slide {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: #292929 url("../images/arrow-right-icon.svg") no-repeat center
+    center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.product-card__placeholder-textVideo {
+  margin-top: 350px;
+}
+
+.video-controls__bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.video-controls__volume,
+.video-controls__fullscreen {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video-controls__volume {
+  background-image: url("../images/volume-icon.svg");
+}
+
+.video-controls__fullscreen {
+  background-image: url("../images/fullscreen-icon.svg");
+}
+
+/* Pagination */
 .carousel-pagination {
   display: flex;
-  justify-content: center;
+  margin-left: 287px;
   align-items: center;
   gap: 20px;
+  margin-top: -15px;
 }
 
-.carousel-pagination button {
+.carousel-pagination__arrow {
+  width: 12px;
+  height: 12px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
   background: none;
-  border: 1px solid #ccc;
-  padding: 10px 15px;
   cursor: pointer;
-  font-size: 18px;
 }
 
-.carousel-pagination .dots {
+.carousel-pagination__arrow--left {
+  transform: rotate(135deg);
+}
+
+.carousel-pagination__arrow--right {
+  transform: rotate(-45deg);
+}
+
+.carousel-pagination__dots {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
-.carousel-pagination .dot {
-  width: 10px;
-  height: 10px;
-  background-color: #ccc;
+.carousel-pagination__dot {
+  width: 16px;
+  height: 16px;
+  background-color: #d6d6d6;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.carousel-pagination .dot.active {
-  background-color: var(--primary-black);
+.carousel-pagination__dot--active {
+  background-color: #333;
 }
 
 @media (max-width: 1024px) {

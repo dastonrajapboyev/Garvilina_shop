@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   line-height: 1.6;
   background-color: #fff;
   color: #333;
@@ -19,7 +19,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 /* Variables */
