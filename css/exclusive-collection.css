@@ -82,8 +82,22 @@
     flex-direction: column;
     align-items: center;
   }
-  .exclusive-collection__grid .product-card {
+  .exclusive-collection .product-card {
     width: 100%;
-    max-width: 450px;
+    max-width: 469px; /* Max width of a card */
+  }
+  .exclusive-collection__header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exclusive-collection {
+    padding: 40px 0;
+  }
+  .exclusive-collection__header h2 {
+    font-size: 28px;
   }
 }

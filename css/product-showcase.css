@@ -209,3 +209,29 @@
     height: auto;
   }
 }
+
+@media (max-width: 992px) {
+  .product-showcase__grid {
+    grid-template-columns: 1fr; /* Stack all items */
+    grid-template-areas:
+      "large"
+      "top-small-1"
+      "top-small-2"
+      "bottom-1"
+      "bottom-2"
+      "bottom-3";
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 712px; /* Set max-width to the largest card's width */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-showcase {
+    padding: 40px 0;
+  }
+}

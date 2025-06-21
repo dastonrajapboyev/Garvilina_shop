@@ -72,6 +72,25 @@
 }
 
 @media (max-width: 768px) {
+  .luxury-promo {
+    height: auto;
+    padding: 60px 0;
+  }
+  .luxury-promo__content {
+    position: static;
+    transform: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  .luxury-promo__text h2 {
+    font-size: 28px;
+  }
+  .luxury-promo__text p {
+    font-size: 16px;
+  }
   .luxury-promo .container {
     flex-direction: column;
     text-align: center;

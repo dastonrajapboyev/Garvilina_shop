@@ -90,7 +90,20 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 60px 0;
+    padding: 60px 20px;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero .container {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .container::before,
+  .hero .container::after {
+    display: none;
   }
 
   .hero h1 {
@@ -99,6 +112,26 @@
 
   .hero p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .hero .btn {
+    padding: 12px 24px;
+    font-size: 14px;
   }
 }
 

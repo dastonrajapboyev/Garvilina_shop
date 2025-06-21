@@ -170,3 +170,38 @@
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+@media (max-width: 992px) {
+  .footer {
+    height: auto;
+    padding: 40px 0;
+  }
+  .footer .container {
+    text-align: center;
+  }
+  .footer__main {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .footer__center {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__right {
+    width: 100%;
+    max-width: 380px;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .footer__left {
+    padding-bottom: 0;
+    /* Order can be changed if needed, e.g., order: 3 */
+  }
+  .subscribe-form {
+    width: 100%;
+  }
+  .footer__links {
+    align-items: center;
+  }
+}
